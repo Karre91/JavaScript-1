@@ -109,3 +109,4 @@ for (let i = 0; i < lettersOfSentence.length; i++){
 }
 
 console.log("Din mening i rövarspråker blir: " + rovaspraket);
+//HEJ
