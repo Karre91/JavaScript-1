@@ -19,7 +19,6 @@ for (let i = 1; i <= 10; i++)
 //Del 3
 let answer = Math.floor(Math.random() * 100 + 1);
 var guess = NaN;
-
 while (guess != answer)
 {    
     guess = prompt("Gissa på ett tal: ");
@@ -43,15 +42,37 @@ let inputSentence = "";
 let rovaspraket = "";
 let lettersOfSentence;
 
-inputSentence = prompt("Skriv in meningen du vill översätta:");
-lettersOfSentence = inputSentence.split("");
+lettersOfSentence = prompt("Skriv in meningen du vill översätta:");
+//lettersOfSentence = inputSentence.split("");
 
 console.log("Användaren skrev in: " + inputSentence);
 
 console.log("Det innehåller såhär många char: " + lettersOfSentence.length);
 
+let vocal = ["a","e","y","u","i","o","å","ö","ä"];
+
+for (let i = 0; i < lettersOfSentence.length; i++){ //Går igenom varje plats i meningen
+    
+    let result = vocal.indexOf(lettersOfSentence[i]); //Hittar index av vokalen
+    if (result == -1){ //Om vi inte hittar någon vokal
+        if (lettersOfSentence[i] == " "){ //Kolla om det är ett mellanslag
+            rovaspraket += lettersOfSentence[i]; //Lägg till mellanslag
+        }
+        else{ //Det är inte vokal eller mellanslag
+            rovaspraket += lettersOfSentence[i] + "o" + lettersOfSentence[i]; //Spara konsonat + o + konsonant
+        }
+    }
+    else{ //Det var en vokal
+        rovaspraket += lettersOfSentence[i]; //Sparar vokalen
+    }
+}
+console.log("Din mening i rövarspråker blir: " + rovaspraket);
+
+
+
+/*
 for (let i = 0; i < lettersOfSentence.length; i++){
-    //Om det INTE är en vokal
+    //Om det INTE är en vokal    
     if (lettersOfSentence[i] != "e"){
         if (lettersOfSentence[i] != "y"){
             if (lettersOfSentence[i] != "u"){
@@ -106,6 +127,5 @@ for (let i = 0; i < lettersOfSentence.length; i++){
     else{
         rovaspraket += lettersOfSentence[i];    
     }
-}
-
-console.log("Din mening i rövarspråker blir: " + rovaspraket);
+} 
+//console.log("Din mening i rövarspråker blir: " + rovaspraket);*/
