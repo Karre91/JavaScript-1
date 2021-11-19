@@ -1,3 +1,55 @@
 .center {
   text-align: center;
 }
+.flexbase {
+  width: 20%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  border: solid 10px rgb(76, 241, 126);
+  flex-wrap: wrap;
+}
+.flex1 {
+  flex-basis: 20%;
+  margin: auto;
+  border: solid;
+  height: auto;
+  padding: 2%;
+}
+.flexBasePartOne {
+  width: auto;
+  height: auto;
+  margin: auto;
+  display: flex;
+  border: solid 10px rgb(76, 241, 126);
+  flex-wrap: wrap;
+}
+.flexPartOneTwoThreeFour {
+  flex-basis: auto;
+  margin: auto;
+  border: solid;
+  height: auto;
+  padding: 1%;
+}
+.flexBasePartTwo {
+  width: auto;
+  height: auto;
+  margin: auto;
+  display: flex;
+  border: solid 10px rgb(76, 241, 126);
+  flex-wrap: wrap;
+}
+.flexPartSix {
+  flex-basis: auto;
+  margin: auto;
+  border: solid;
+  height: auto;
+  padding: 2%;
+}
+.flexPartSeven {
+  flex-basis: auto;
+  margin: auto;
+  border: solid;
+  height: auto;
+  padding: 2%;
+}
