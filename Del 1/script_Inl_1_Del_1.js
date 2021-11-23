@@ -1,7 +1,5 @@
-// DEL 1
-
 // 1 
-function squareToTen (){
+squareToTen = function (){
     console.clear(); //Rensar fönster
     for (let i = 1; i <= 10; i++)
     {
@@ -13,7 +11,7 @@ function squareToTen (){
 
 
 // 2
-function multiplication(){
+multiplication = function (){
     console.clear();
     for (let i = 1; i <= 10; i++)
     {
@@ -27,7 +25,7 @@ function multiplication(){
 
 
 // 3
-function guessNumber(){
+guessNumber = function (){
     let answer = Math.floor(Math.random() * 100 + 1);
     var guess;
     let exit = false;
@@ -47,8 +45,7 @@ function guessNumber(){
             else {
                 alert(`Grattis, du gissade rätt!`)  
                 exit = true;          
-            }
-            
+            }            
         }
         else if (guess == null){
             exit = true; 
@@ -58,7 +55,7 @@ function guessNumber(){
 
 
 // 4
-function robbersLanguage(){
+robbersLanguage = function (){
     let inputSentence = "";
     let rovarspraket = " ";
 
@@ -91,6 +88,6 @@ function robbersLanguage(){
         alert("Din mening på rövarspråker blir: " + rovarspraket);
     }
     else{
-        alert("Du skrev inte någonting");
-    }    
+        alert("Du skrev inte någonting");            
+    }        
 }

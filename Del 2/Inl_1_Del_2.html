@@ -7,13 +7,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
+    <script src="script_Inl_1_Del_2.js" defer></script>
+
     <title>Del 2</title>
 </head>
 
 <body>
+    <!--DEL 5-->
     <h1>Hej Holger!</h1>
     <h3>Del 2</h3>
-    <p>5</p>
+    <h2 class="center">5</h2>
+    <div class="flexBasePartTwo">
+        <div class="flexPartFive">
+            <button onclick="info()">Hämta info</button><span> Skrivs ut i loggen.</span>
+        </div>
+    </div>
+
+
+
+    <!--DEL 6-->
     <h2 class="center">6</h2>
     <div class="flexBasePartTwo">
         <div class="flexPartSix">
@@ -33,45 +45,55 @@
         </div>
     </div>
 
-
+    <!--DEL 7-->
     <h2 class="center">7</h2>
     <div class="flexBasePartTwo">
-        <form class="flexPartSeven" action="/my-handling-form-page" method="post">
+        <div id="input" class="flexPartSeven">
             <ul>
                 <li>
-                    <label for="fname">Förnamn:</label>
-                    <input type="text" id="fname" name="user_fname">
+                    <label for="fname">Förnamn:</label><br>
+                    <input type="text" id="fname"><span class="wrong"></span>
                 </li>
                 <li>
-                    <label for="lname">Efternamn:</label>
-                    <input type="text" id="lname" name="user_lname">
+                    <label for="lname">Efternamn:</label><br>
+                    <input type="text" id="lname"><span class="wrong"></span>
                 </li>
                 <li>
-                    <label for="mail">Email:</label>
-                    <input type="email" id="mail" name="user_mail">
+                    <label for="mail">Email:</label><br>
+                    <input type="email" id="mail"><span class="wrong"></span>
                 </li>
                 <li>
-                    <label for="adress">Postnummer:</label>
-                    <input type="number" id="adress" name="user_adress">
+                    <label for="destination">Vart vill du åka:</label><br>
+                    <input type="radio" name="user_desti" id="desti1" value="Dannmark">Dannmark
+                    <input type="radio" name="user_desti" id="desti2" value="Norge">Norge
+                    <input type="radio" name="user_desti" id="desti3" value="Finnland">Finnland
+                    <input type="radio" name="user_desti" id="desti4" value="Tyskland">Tyskland
+                    <span class="wrong"></span>
                 </li>
                 <li>
-                    <label for="password">Lösenord:</label>
-                    <input type="password" id="password" name="user_password">
-                </li>
-                <li>
-                    <label for="leaveDate">När vill du åka:</label>
+                    <label for="leaveDate">När vill du åka:</label><br>
                     <input type="date" id="leaveDate" name="user_leaveDate">
+                    <span class="wrong"></span>
                 </li>
                 <li>
-                    <label for="homeDate">När vill du komma hem:</label>
+                    <label for="homeDate">När vill du komma hem:</label><br>
                     <input type="date" id="homeDate" name="user_homeDate">
+                    <span class="wrong"></span>
                 </li>
             </ul>
-            <button onclick="">Skicka</button>
-        </form>
+            <button onclick="travel()">Skicka butt</button>
+            <input type="submit" value="Skicka">
+        </div>
     </div>
-    <p>8</p>
-    <script src="script_Inl_1_Del_2.js"></script>
+    <div class="flexBasePartTwo">
+        <div class="flexPartSeven">
+            <h2 id="booking"></h2>
+            <p id="paraBook"></p>
+        </div>
+    </div>
+
+    <!--DEL 8-->
+    <h2 class="center">8</h2>
 </body>
 
 </html>
