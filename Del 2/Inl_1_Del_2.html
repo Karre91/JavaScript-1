@@ -6,9 +6,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
-    <script src="script_Inl_1_Del_2.js" defer></script>
-
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="script_Inl_1_Del_2.js"></script>
+   
     <title>Del 2</title>
 </head>
 
@@ -48,7 +49,7 @@
     <!--DEL 7-->
     <h2 class="center">7</h2>
     <div class="flexBasePartTwo">
-        <div id="input" class="flexPartSeven">
+        <form id="input" class="flexPartSeven">
             <ul>
                 <li>
                     <label for="fname">Förnamn:</label><br>
@@ -60,14 +61,18 @@
                 </li>
                 <li>
                     <label for="mail">Email:</label><br>
-                    <input type="email" id="mail"><span class="wrong"></span>
+                    <input type="text" id="mail"><span class="wrong"></span>
+                </li>
+                <li>
+                    <label for="phone">Telefonummer:</label> (min 6 siffror)<br>
+                    <input type="text" id="phone"><span class="wrong"></span>
                 </li>
                 <li>
                     <label for="destination">Vart vill du åka:</label><br>
-                    <input type="radio" name="user_desti" id="desti1" value="Dannmark">Dannmark
-                    <input type="radio" name="user_desti" id="desti2" value="Norge">Norge
-                    <input type="radio" name="user_desti" id="desti3" value="Finnland">Finnland
-                    <input type="radio" name="user_desti" id="desti4" value="Tyskland">Tyskland
+                    <input type="radio" name="user_desti" class="desti" value="Danmark">Danmark
+                    <input type="radio" name="user_desti" class="desti" value="Norge">Norge
+                    <input type="radio" name="user_desti" class="desti" value="Finland">Finland
+                    <input type="radio" name="user_desti" class="desti" value="Tyskland">Tyskland
                     <span class="wrong"></span>
                 </li>
                 <li>
@@ -81,9 +86,8 @@
                     <span class="wrong"></span>
                 </li>
             </ul>
-            <button onclick="travel()">Skicka butt</button>
-            <input type="submit" value="Skicka">
-        </div>
+            <input type="submit" value="Skicka" id="button">
+        </form>
     </div>
     <div class="flexBasePartTwo">
         <div class="flexPartSeven">
@@ -94,6 +98,21 @@
 
     <!--DEL 8-->
     <h2 class="center">8</h2>
+    <h3 class="center">jQuery</h3>
+    
+    <div id="parent">
+        <p id="joke"></p>
+        <div id="child">            
+        </div>
+        <p id="answ"></p>
+    </div>
+    <br><br>
+    <button id="but"></button>
+ 
+        <div id="div" style="position:relative"><img src="wallpaperbetter.jpg" width="200" alt="alternativ text"></div>
+    <button id="butt"></button>
+    <div style="height:1000px"></div>
+
 </body>
 
 </html>
